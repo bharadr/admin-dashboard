@@ -1,0 +1,278 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 5fr;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */  
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: rgb(43, 136, 216);
+    color: white;
+}
+
+.sidebar p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.sidebar1 p, .sidebar2 p {
+    margin: 10px;
+}
+
+
+img.iconmed {
+    width: 36px;
+    height: 36px;
+    filter: invert(100%);
+}
+
+img.iconsmall {
+    width: 18px;
+    height: 18px;
+    filter: invert(100%);
+}
+
+img.icon {
+    width: 26px;
+    height: 26px;
+}
+
+.itemrow1, .logorow {
+    display: flex;
+    align-items: center;
+}
+
+.itemrow1 {
+    gap: 10px;
+    font-size: 15px;
+    padding: 0px 0px 0px 20px;
+}
+
+.logorow {
+    padding: 5px 0px 20px 10px;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.sidebar1 {
+    padding: 0px 0px 50px 0px;
+}
+
+.topbar {
+    display: grid;
+    grid-area: 1 / 2 / 2 / 3;
+    box-shadow: 0px 5px 5px grey;
+    z-index: 10;
+}
+
+button {
+    background-color: rgb(43, 136, 216);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80px;
+    font-weight: 500;
+}
+
+.content {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#searchicon, #midicon {
+    padding-left: 10px;
+    place-self: center;
+}
+
+.topcontrols {
+    display: inline-grid;
+    grid-template-columns: 70px 500px 1fr 70px 70px 200px;
+    align-items: center;
+}
+
+.bottomcontrols {
+    display: inline-grid;
+    grid-template-columns: 120px 400px 1fr 150px 150px 150px;
+    align-items: center;
+}
+
+.topcontrols p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-right: 50px;
+}
+
+
+#lasticon {
+    width: 50px;
+    height: 50px;
+    place-self: center;
+}
+
+#profileicon {
+    width: 75px;
+    height: 75px;
+    place-self: center;
+    padding-left: 20px;
+}
+
+
+.topbar input {
+    border-radius: 10px;
+    background-color: rgb(208, 230, 250);
+    border: none;
+    height: 22px;
+}
+
+#toptext, #bottomtext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+#toptext {
+    font-size: 12px;
+    margin: 5px;
+}
+
+#bottomtext {
+    font-size: 24px;
+    margin: 5px;
+}
+
+#projecttitle, #announcementtitle, #trendingtitle {
+    position: absolute;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#trendingtitle {
+    bottom: 205px;
+    margin-left: -20px;
+}
+
+#projecttitle {
+    top: 125px;
+}
+
+#announcementtitle {
+    top: 125px;
+    margin-left: -20px;
+}
+
+
+
+.content {
+    background-color: rgb(241, 248, 255);
+    display: grid;
+}
+
+.projects {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 25px;
+    padding: 50px 20px;
+}
+
+
+.content .card {
+    background-color: white;
+    padding: 20px 20px 5px 20px;
+    box-shadow: inset 10px 0px gold;
+    display: grid;
+    grid-template-rows: 40px auto 40px;
+}
+
+.content .card .images {
+    display: grid;
+    grid-template-columns: auto 20px 20px 30px;
+    gap: 30px;
+}
+
+
+.content .card .header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.content .card .words {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: gray;
+}
+
+.content .card img {
+    width: 30px;
+    height: 30px;
+}
+
+.entry {
+    width: 80%;
+}
+
+.entry .header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.entry .words {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: gray;
+}
+
+.announcements {
+    background-color: white;
+    padding: 5px 0px 20px 20px;
+    border-radius: 10px;
+    margin: 50px 50px 0px 0px;
+}
+
+hr {  
+    background-color: grey;
+    width:90%;
+    margin-left: -5px;
+    height: 1px;
+}
+ 
+.slot {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+}
+
+.slot .fullname {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: gray;
+}
+
+.slot img {
+    height: 40px;
+    width: 40px;
+}
+
+.slot p {
+    margin: 2px;
+}
+
+.trending {
+    background-color: white;
+    padding: 10px 0px 10px 20px;
+    border-radius: 10px;
+    margin: 50px 50px 0px 0px;
+    display: grid;
+    row-gap: 10px;
+}
